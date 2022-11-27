@@ -18,7 +18,7 @@
         <div class="nav">
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Brand</a></li>
                     <li><a href="#">Women</a></li>
@@ -28,21 +28,71 @@
             </nav>
         </div>
 
-        <!-- <div class="account-icon">
+        <div class="account-icon">
             <i class="fa-solid fa-bag-shopping"></i>
             <i class="fa-solid fa-user"></i>
-        </div> -->
-        <div class="header">
-            <input type="text" placeholder="Search">
         </div>
     </header>
     <script src="JsFiles/script.js"></script>
-    
+    <div class="header">
+        <input type="text" placeholder="Search">
+        <button class="button1" onclick="myfunction()">Filters</button>
+        <div class="dropdown" id="dropdown">
+            <div>
+                <h2>Color</h2>
+                <div>
+                    <h4>Red</h4>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <h4>Black</h4>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <h4>White</h4>
+                    <input type="checkbox">
+                </div>
+            </div>
+            <div>
+                <h2>Price</h2>
+                <div>
+                    <h4>0-100</h4>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <h4>100-200</h4>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <h4>200-300</h4>
+                    <input type="checkbox">
+                </div>
+            </div>
+            <div>
+                <h2>Brand</h2>
+                <div>
+                    <h4>Lenovo</h4>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <h4>Lenovo</h4>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <h4>Lenovo</h4>
+                    <input type="checkbox">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
     <div class="main">
         <p>Home | Electronics</p>
         <h2>Explore The Products</h2>
     </div>
-    <div class="filter">
+    <!-- <div class="filter">
         <div class="filters">
             <div>
                 <h2 onclick="myfunction1()" id="dropdownlist1">Color</h2>
@@ -77,7 +127,7 @@
                 <li>Sort by Oldest</li>
             </ul>
         </div>
-    </div>
+    </div> -->
     <div class="items">
         <div>
             <img src="assets/controller.png" alt="">
