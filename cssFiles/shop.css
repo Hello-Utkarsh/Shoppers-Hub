@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-body{
+body {
     background-color: #ebebeb;
 }
 
@@ -108,7 +108,7 @@ li {
 /* Main Section */
 
 /* FILTERS START */
-.dropdown{
+.dropdown {
     width: 48.5vw;
     display: none;
     text-align: center;
@@ -120,7 +120,7 @@ li {
     border-radius: 30px;
 }
 
-.dropdown div div{
+.dropdown div div {
     display: flex;
     align-items: center;
     width: 17vw;
@@ -128,30 +128,31 @@ li {
     display: flex;
 }
 
-.dropdown div h2{
+.dropdown div h2 {
     text-align: center;
     width: 106px;
     margin: 0px 28px 20px;
 }
 
-.dropdown div div h4{
+.dropdown div div h4 {
     width: 70px;
 }
 
-.dropdown div div input{
+.dropdown div div input {
     width: 70px;
 }
+
 /* FILTERS END*/
 
 /* PRODUCTS START */
 
-.product-card-div{
+.product-card-div {
     display: flex;
     justify-content: space-between;
     margin: 2vw 1vw;
 }
 
-.product-cards{
+.product-cards {
     height: 30vw;
     width: 30vw;
     align-items: center;
@@ -161,11 +162,11 @@ li {
     background-color: white;
 }
 
-.product-cards h2{
+.product-cards h2 {
     margin: 20px 0px 0px;
 }
 
-.product-cards span{
+.product-cards span {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -173,9 +174,109 @@ li {
     margin: 0px 20px;
 }
 
-.product-cards span img{
+.product-cards span img {
     width: 12vw;
 }
+
+.product-slider {
+    overflow: hidden;
+    background-color: white;
+    margin: 1vw;
+}
+
+@keyframes slider {
+    0% {
+        left: 0vw;
+    }
+
+    6% {
+        left: 0vw;
+    }
+
+    12% {
+        left: -15vw;
+    }
+
+    18% {
+        left: -15vw;
+    }
+
+    24% {
+        left: -30vw;
+    }
+
+    30% {
+        left: -30vw;
+    }
+
+    36% {
+        left: -45vw;
+    }
+
+    42% {
+        left: -45vw;
+    }
+
+    48% {
+        left: -60vw;
+    }
+
+    56% {
+        left: -60vw;
+    }
+
+    60% {
+        left: -45vw;
+    }
+
+    66% {
+        left: -45vw;
+    }
+
+    72% {
+        left: -30vw;
+    }
+
+    78% {
+        left: -30vw;
+    }
+
+    84% {
+        left: -15vw;
+    }
+
+    90% {
+        left: -15vw;
+    }
+
+    100% {
+        left: 0vw;
+    }
+
+}
+
+.product-slider h2 {
+    margin: 1.5vw 2vw;
+}
+
+.product-slider div {
+    animation-name: slider;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    display: flex;
+    position: relative;
+    background-color: white;
+    margin: 0.5vw;
+    right: 0;
+}
+
+.product-slider div img {
+    cursor: pointer;
+    margin: 0.5vw 1.5vw;
+    width: 15vw;
+}
+
+
 
 .items {
     display: flex;
